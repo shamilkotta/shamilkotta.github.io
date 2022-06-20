@@ -15,7 +15,7 @@
 
 .header > .container {
   height: 100vh;
-  background: rgba(11, 17, 32, 0.5);
+  background: rgba(11, 17, 32, 0.3);
   padding: 30px;
   box-sizing: border-box;
 }
@@ -29,7 +29,6 @@
 }
 
 .content {
-  /* background: rgba(0, 0, 0, 0.308); */
   display: grid;
   grid-template-columns: 60fr 40fr;
   height: 100;
@@ -40,6 +39,7 @@
   width: 60vw;
   justify-self: start;
   align-self: center;
+  margin: 0 0 0 50px;
 }
 
 .profile {
@@ -63,8 +63,56 @@
 }
 
 .social > .social_icon {
-  background: black;
+  font-size: 20px;
+  color: white;
+  background: rgba(156, 2, 123, 0.849);
   margin: 5px;
-  padding: 5px 8px;
+  padding: 5px 10px;
   border-radius: 5px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.social_icon:hover {
+  background: rgba(119, 1, 94, 0.904);
+}
+
+.head {
+  font: bolder;
+  font-size: 3rem;
+}
+
+.tag {
+  font-size: 1.2rem;
+  color: rgba(192, 3, 151, 0.849);
+}
+
+.tag > span {
+  color: rgb(103, 103, 104);
+  font: bolder;
+  font-size: 1.3rem;
+}
+
+.bio {
+  margin-top: 25px;
+  font-size: 1.3rem;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cv {
+  font-size: 1.2rem;
+  margin-right: 5px;
+  color: rgb(241, 245, 249);
+  background: rgba(51, 65, 85);
+  border: 2px solid rgb(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 6px 13px;
+  cursor: pointer;
+}
+
+.cv:hover {
+  background: rgba(71, 85, 105);
 }
