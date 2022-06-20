@@ -7,7 +7,7 @@
 .header {
   height: 100vh;
   background-image: url("/assets/images/bg.jpg");
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -15,7 +15,12 @@
 
 .header > .container {
   height: 100vh;
-  background: rgba(11, 17, 32, 0.3);
+  background-image: linear-gradient(
+    to top,
+    rgba(11, 17, 32, 1),
+    rgba(11, 17, 32, 0)
+  );
+  position: absolute;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -115,4 +120,9 @@
 
 .cv:hover {
   background: rgba(71, 85, 105);
+}
+
+.skills {
+  height: 100vh;
+  background: rgba(11, 17, 32, 1);
 }
