@@ -1,0 +1,70 @@
+* {
+  margin: 0px;
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("/assets/images/bg.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.header > .container {
+  height: 100vh;
+  background: rgba(11, 17, 32, 0.5);
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.content {
+  /* background: rgba(0, 0, 0, 0.308); */
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  height: 100;
+  box-sizing: border-box;
+}
+
+.about {
+  width: 60vw;
+  justify-self: start;
+  align-self: center;
+}
+
+.profile {
+  background-image: url("/assets//images/profile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
+  justify-self: center;
+  width: 360px;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.social > .social_icon {
+  background: black;
+  margin: 5px;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
