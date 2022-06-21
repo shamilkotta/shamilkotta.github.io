@@ -4,6 +4,10 @@
   font-family: Roboto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   height: 100vh;
   background-image: url("/assets/images/bg.jpg");
@@ -68,11 +72,10 @@
 }
 
 .social > .social_icon {
-  font-size: 30px;
   color: white;
   background: rgba(156, 2, 123, 0.849);
   margin: 5px;
-  padding: 5px 15px;
+  padding: 5px;
   border-radius: 8px;
   border: transparent;
   cursor: pointer;
@@ -99,16 +102,17 @@
 
 .cta {
   margin-top: 20px;
+  width: 100%;
 }
 
 .cv {
   font-size: 1.2rem;
+  font-weight: bolder;
   margin-right: 5px;
   color: rgb(241, 245, 249);
   background: rgba(51, 65, 85);
   border: 2px solid rgb(255, 255, 255, 0.1);
   border-radius: 3px;
-  padding: 6px 13px;
   cursor: pointer;
 }
 
