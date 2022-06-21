@@ -1,4 +1,8 @@
 
+.icon-git:before { content: '\e802'; } /* '' */
+.icon-nextjs:before { content: '\e806'; } /* '' */
+.icon-express:before { content: '\e807'; } /* '' */
+.icon-mongodb:before { content: '\e808'; } /* '' */
 .icon-twitter:before { content: '\f099'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-linkedin:before { content: '\f0e1'; } /* '' */
