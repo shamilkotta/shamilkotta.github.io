@@ -182,7 +182,7 @@ a {
 
 .skill_express > i {
   position: absolute;
-  left: 25px;
+  left: 23%;
 }
 
 .skill_db {
@@ -197,7 +197,7 @@ a {
 
 .skill_db > i {
   position: absolute;
-  left: 40px;
+  left: 23%;
 }
 
 .skill_other {
@@ -394,4 +394,45 @@ a {
   margin-top: 10px;
   border-radius: 25px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .skills_title {
+    grid-area: 1/1/2/3;
+  }
+
+  .skills_block {
+    grid-template-rows: auto repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill_next {
+    grid-area: 2/1/3/3;
+    width: 90vw;
+  }
+
+  .skill_express {
+    width: 43vw;
+  }
+
+  .skill_db,
+  .skill_other {
+    width: 43vw;
+  }
+
+  .skill_git {
+    width: 43vw;
+  }
+
+  .project_data {
+    margin-top: -180px;
+  }
+
+  .projects_cta {
+    flex-direction: row;
+  }
+
+  .projects_cta > a {
+    margin: 0 10px 0 0;
+  }
 }
