@@ -2,6 +2,9 @@
   margin: 0px;
   font-size: 16px;
   font-family: Roboto;
+
+  --primary: 11, 17, 32;
+  --secondary: 192, 3, 151;
 }
 
 a {
@@ -21,8 +24,8 @@ a {
   height: 100vh;
   background-image: linear-gradient(
     to top,
-    rgba(11, 17, 32, 1),
-    rgba(11, 17, 32, 0)
+    rgba(var(--primary)),
+    rgba(var(--primary), 0)
   );
   position: absolute;
   padding: 30px;
@@ -73,7 +76,7 @@ a {
 
 .social > .social_icon {
   color: white;
-  background: rgba(156, 2, 123, 0.849);
+  background: rgba(var(--secondary), 0.849);
   margin: 5px;
   padding: 5px;
   border-radius: 8px;
@@ -82,7 +85,7 @@ a {
 }
 
 .social_icon:hover {
-  background: rgba(119, 1, 94, 0.904);
+  background: rgba(var(--secondary), 0.6);
 }
 
 .head {
@@ -92,7 +95,7 @@ a {
 
 .tag {
   font-size: 1.2rem;
-  color: rgba(192, 3, 151, 0.849);
+  color: rgba(var(--secondary), 0.849);
 }
 
 .bio {
@@ -110,7 +113,7 @@ a {
   font-weight: bolder;
   margin-right: 5px;
   color: rgb(241, 245, 249);
-  background: rgba(51, 65, 85, 0.075);
+  background: rgba(var(--primary), 0.075);
   border: 2px solid rgb(255, 255, 255, 0.1);
   box-shadow: 0px 0px 15px -4px black;
   border-radius: 3px;
@@ -131,7 +134,7 @@ a {
   align-items: center;
   justify-items: center;
   padding: 30px;
-  background: rgba(11, 17, 32, 1);
+  background: rgba(var(--primary));
 }
 
 .skills_title {
@@ -227,7 +230,7 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  background: rgb(15 23 42);
+  background: rgb(15, 23, 42);
 }
 
 .skill_git > h3 {
@@ -241,7 +244,7 @@ a {
   height: 150px;
   border-radius: 50%;
   background: conic-gradient(
-    rgba(194, 4, 153, 0.849) var(--progress),
+    rgba(var(--secondary), 0.849) var(--progress),
     rgb(182, 182, 182) 0deg
   );
   font-size: 0;
@@ -272,7 +275,7 @@ a {
 
 .projects {
   height: 100%;
-  background: rgba(11, 17, 32, 1);
+  background: rgba(var(--primary));
   background-image: url("/assets/images/bg.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -321,6 +324,9 @@ a {
   background: rgba(8, 13, 24, 0.596);
   border-radius: 8px 8px 0 0;
   border-bottom: 1px solid gray;
+  position: sticky;
+  left: 0;
+  top: 0;
 }
 
 .project_img > .img_header > .img_dot {
@@ -358,7 +364,7 @@ a {
 .project_description > span {
   font-size: 1.3rem;
   font-weight: bold;
-  color: rgba(192, 3, 151, 0.849);
+  color: rgba(var(--secondary), 0.849);
 }
 
 .project_links {
