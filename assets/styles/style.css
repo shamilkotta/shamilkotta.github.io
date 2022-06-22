@@ -31,7 +31,7 @@ a {
 }
 
 .logo {
-  height: 30px;
+  height: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
@@ -152,7 +152,7 @@ a {
   grid-template-rows: auto repeat(5, 1fr);
   align-items: center;
   justify-items: center;
-  margin: 20vh 0 0;
+  margin: 150px 0 0;
 }
 
 .skill_next {
@@ -274,7 +274,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 20vh 30px 30px;
+  padding: 150px 30px 30px;
   display: grid;
   grid-gap: 30px;
   gap: 30px;
@@ -292,7 +292,7 @@ a {
 }
 
 .project_img {
-  opacity: 0.4;
+  opacity: 0.3;
   width: min(50vw, 500px);
   height: 250px;
   border: 1px solid gray;
@@ -434,5 +434,42 @@ a {
 
   .projects_cta > a {
     margin: 0 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+
+  .content {
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .about {
+    order: 1;
+    justify-self: flex-start;
+    margin: 0 0 0 20px;
+  }
+
+  .profile {
+    order: 2;
+    background-image: url("/assets/images/profile.png");
+    background-position: center;
+    align-self: center;
+    justify-self: flex-end;
+    width: 270px;
+    height: 440px;
+    margin: 0px;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .social {
+    flex-direction: row;
+    margin: 20px 0;
   }
 }
