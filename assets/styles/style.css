@@ -387,3 +387,23 @@ a {
 .project_links > a:hover {
   background: rgba(51, 65, 85, 0.233);
 }
+
+.projects_cta {
+  height: 200px;
+  background: rgba(var(--primary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects_cta > a {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: rgb(241, 245, 249);
+  background: rgba(51, 65, 85, 0.075);
+  border: 2px solid rgb(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 15px -4px black;
+  margin-right: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
