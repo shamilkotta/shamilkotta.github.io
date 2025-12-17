@@ -5,12 +5,12 @@ const GITHUB_USERNAME = "shamilkotta";
 // Color mappings for grayscale contribution graph
 function getContributionColors(isDark) {
   if (isDark) {
-    // Dark theme: grey to white (no contribution = visible grey, high = white)
+    // Dark theme: grey to white (no contribution = dark grey, high = white)
     return {
-      level0: "#3a3a3a", // No contributions - visible grey
-      level1: "#6a6a6a", // Low
-      level2: "#9a9a9a", // Medium-low
-      level3: "#cacaca", // Medium-high
+      level0: "#121212", // No contributions - dark grey
+      level1: "#555555", // Low
+      level2: "#888888", // Medium-low
+      level3: "#bbbbbb", // Medium-high
       level4: "#ffffff", // High - white
     };
   } else {
