@@ -1,0 +1,210 @@
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --border: #eaeaea;
+  --link-color: #000000;
+  --subtle-foreground: #666666;
+}
+
+[data-theme="dark"] {
+  --background: #000000;
+  --foreground: #ffffff;
+  --border: #333333;
+  --link-color: #ffffff;
+  --subtle-foreground: #999999;
+}
+
+body {
+  font-family: "Geist Sans", sans-serif;
+
+  background-color: var(--background);
+
+  color: var(--foreground);
+
+  transition: background-color 0.3s, color 0.3s;
+
+  margin: 0;
+
+  padding: 2rem;
+
+  position: relative;
+
+  z-index: 1;
+
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.container {
+  max-width: 800px;
+
+  margin: 0 auto;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 4rem;
+}
+
+.header-content h2 {
+  font-size: 1.5rem;
+
+  font-weight: 500;
+
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1rem;
+
+  color: var(--subtle-foreground);
+
+  margin: 0.25rem 0 0 0;
+}
+
+.personal-website-link {
+  margin-top: 0.5rem;
+
+  font-size: 1rem;
+}
+
+.personal-website-link a {
+  color: var(--foreground);
+
+  text-decoration: none;
+}
+
+.personal-website-link a:hover {
+  opacity: 0.7;
+}
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.social-links a,
+#theme-toggle {
+  color: var(--foreground);
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.social-links a:hover,
+#theme-toggle:hover {
+  opacity: 0.7;
+}
+
+#theme-toggle {
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+}
+
+#theme-toggle svg {
+  transition: transform 0.5s ease;
+}
+
+#theme-toggle.theme-transition svg {
+  transform: rotate(360deg);
+}
+
+#contribution-graph {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#contribution-graph svg {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+#contribution-svg-container {
+  padding: 0.5rem 0;
+}
+
+#repo-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 1.5rem;
+}
+
+.repo-card {
+  border-bottom: 1px solid var(--border);
+
+  padding-bottom: 1.5rem;
+}
+
+.repo-card:last-child {
+  border-bottom: none;
+}
+
+.repo-card h2 {
+  font-size: 1.125rem;
+
+  font-weight: 500;
+
+  margin-top: 0;
+
+  margin-bottom: 0.25rem;
+}
+
+.repo-card a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.repo-card a:hover {
+  text-decoration: underline;
+}
+
+.repo-url {
+  font-size: 0.875rem;
+
+  color: var(--subtle-foreground);
+
+  margin: 0 0 0.5rem 0;
+}
+
+.repo-card p {
+  margin: 0 0 1rem 0;
+
+  color: var(--subtle-foreground);
+}
+
+.repo-links a {
+  color: var(--foreground);
+
+  text-decoration: none;
+
+  margin-right: 1rem;
+
+  font-weight: 500;
+}
