@@ -16,69 +16,50 @@
 
 body {
   font-family: "Geist Sans", sans-serif;
-
   background-color: var(--background);
-
   color: var(--foreground);
-
   transition: background-color 0.3s, color 0.3s;
-
   margin: 0;
-
   padding: 2rem;
-
   position: relative;
-
   z-index: 1;
-
   overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 .container {
   max-width: 800px;
-
   margin: 0 auto;
-
   position: relative;
-
   z-index: 2;
 }
 
 header {
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
-
   margin-bottom: 4rem;
 }
 
 .header-content h2 {
   font-size: 1.5rem;
-
   font-weight: 500;
-
   margin: 0;
 }
 
 .header-content p {
   font-size: 1rem;
-
   color: var(--subtle-foreground);
-
   margin: 0.25rem 0 0 0;
 }
 
 .personal-website-link {
   margin-top: 0.5rem;
-
+  text-decoration: underline;
   font-size: 1rem;
 }
 
 .personal-website-link a {
   color: var(--foreground);
-
   text-decoration: none;
 }
 
@@ -88,20 +69,15 @@ header {
 
 .social-links {
   display: flex;
-
   align-items: center;
-
   gap: 1rem;
 }
 
 .social-links a,
 #theme-toggle {
   color: var(--foreground);
-
   display: inline-flex;
-
   align-items: center;
-
   justify-content: center;
 }
 
@@ -112,15 +88,10 @@ header {
 
 #theme-toggle {
   background: none;
-
   border: none;
-
   cursor: pointer;
-
   padding: 0;
-
   display: flex;
-
   align-items: center;
 }
 
@@ -149,15 +120,12 @@ header {
 
 #repo-list {
   display: flex;
-
   flex-direction: column;
-
   gap: 1.5rem;
 }
 
 .repo-card {
   border-bottom: 1px solid var(--border);
-
   padding-bottom: 1.5rem;
 }
 
@@ -167,17 +135,13 @@ header {
 
 .repo-card h2 {
   font-size: 1.125rem;
-
   font-weight: 500;
-
   margin-top: 0;
-
   margin-bottom: 0.25rem;
 }
 
 .repo-card a {
   text-decoration: none;
-
   color: inherit;
 }
 
@@ -187,24 +151,18 @@ header {
 
 .repo-url {
   font-size: 0.875rem;
-
   color: var(--subtle-foreground);
-
   margin: 0 0 0.5rem 0;
 }
 
 .repo-card p {
   margin: 0 0 1rem 0;
-
   color: var(--subtle-foreground);
 }
 
 .repo-links a {
   color: var(--foreground);
-
   text-decoration: none;
-
   margin-right: 1rem;
-
   font-weight: 500;
 }
