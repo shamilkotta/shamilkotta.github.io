@@ -126,7 +126,7 @@ header {
 
 .repo-card {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .repo-card:last-child {
@@ -153,6 +153,15 @@ header {
   font-size: 0.875rem;
   color: var(--subtle-foreground);
   margin: 0 0 0.5rem 0;
+}
+
+.repo-url a {
+  color: var(--subtle-foreground);
+  text-decoration: none;
+}
+
+.repo-url a:hover {
+  text-decoration: underline;
 }
 
 .repo-card p {

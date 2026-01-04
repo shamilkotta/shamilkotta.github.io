@@ -216,7 +216,9 @@ document.addEventListener("DOMContentLoaded", () => {
     repoCard.classList.add("repo-card");
 
     const titleLink = document.createElement("a");
-    titleLink.href = repo.html_url;
+    // Link to homepage if available, otherwise to repo URL
+    titleLink.href =
+      repo.homepage && repo.homepage.trim() !== "" ? repo.homepage : repo.repo;
     titleLink.target = "_blank";
 
     const title = document.createElement("h2");
@@ -225,26 +227,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const repoUrl = document.createElement("p");
     repoUrl.classList.add("repo-url");
-    repoUrl.textContent = repo.full_name;
+    const fullNameLink = document.createElement("a");
+    fullNameLink.href = repo.repo;
+    fullNameLink.target = "_blank";
+    fullNameLink.textContent = repo.full_name;
+    repoUrl.appendChild(fullNameLink);
 
     const description = document.createElement("p");
     description.textContent = repo.description || "No description available.";
 
-    const links = document.createElement("div");
-    links.classList.add("repo-links");
-
-    if (repo.homepage && repo.homepage.trim() !== "") {
-      const liveLink = document.createElement("a");
-      liveLink.href = repo.homepage;
-      liveLink.textContent = "Check It Out";
-      liveLink.target = "_blank";
-      links.appendChild(liveLink);
-    }
-
     repoCard.appendChild(titleLink);
     repoCard.appendChild(repoUrl);
     repoCard.appendChild(description);
-    repoCard.appendChild(links);
 
     repoList.appendChild(repoCard);
   });
