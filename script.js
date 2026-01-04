@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (repo.homepage && repo.homepage.trim() !== "") {
       const liveLink = document.createElement("a");
       liveLink.href = repo.homepage;
-      liveLink.textContent = "Live Demo";
+      liveLink.textContent = "Check It Out";
       liveLink.target = "_blank";
       links.appendChild(liveLink);
     }
