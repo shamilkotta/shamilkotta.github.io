@@ -15,9 +15,9 @@ export const repos = [
   },
   {
     name: "journeygrid",
-    description: "Draw and plan your journey of any kind",
+    description: "Journal your journey",
     html_url: "https://github.com/shamilkotta/journeygrid",
-    homepage: null,
+    homepage: "https://journeygrid.vercel.app",
     full_name: "shamilkotta/journeygrid",
   },
   {
