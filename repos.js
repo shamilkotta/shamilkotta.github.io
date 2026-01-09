@@ -5,6 +5,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/fnly",
     homepage: "",
     full_name: "github/fnly",
+    isLive: false,
+    isDraft: true,
   },
   {
     name: "nlite",
@@ -12,6 +14,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/nlite",
     homepage: "",
     full_name: "github/nlite",
+    isLive: false,
+    isDraft: true,
   },
   {
     name: "journeygrid",
@@ -19,6 +23,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/journeygrid",
     homepage: "https://journeygrid.vercel.app",
     full_name: "github/journeygrid",
+    isLive: true,
+    isDraft: true,
   },
   {
     name: "zshi",
@@ -26,6 +32,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/zshi",
     homepage: "https://www.npmjs.com/package/zshi",
     full_name: "github/zshi",
+    isLive: true,
+    isDraft: true,
   },
   {
     name: "rn-drag-resize",
@@ -34,6 +42,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/rn-drag-resize",
     homepage: "https://www.npmjs.com/package/@shamilkotta/rn-drag-resize",
     full_name: "github/rn-drag-resize",
+    isLive: true,
+    isDraft: true,
   },
   {
     name: "quick-switch",
@@ -41,6 +51,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/quick-switch",
     homepage: null,
     full_name: "github/quick-switch",
+    isLive: false,
+    isDraft: true,
   },
   {
     name: "clone-ai",
@@ -48,6 +60,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/clone-ai",
     homepage: "https://a-clone-ai.vercel.app/",
     full_name: "github/clone-ai",
+    isLive: true,
+    isDraft: true,
   },
   {
     name: "shamilkotta",
@@ -56,6 +70,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/shamilkotta",
     homepage: "https://shamilkotta.github.io",
     full_name: "github/shamilkotta",
+    isLive: true,
+    isDraft: false,
   },
   {
     name: "github-readme-streak-stats",
@@ -63,6 +79,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/github-readme-streak-stats",
     homepage: "https://github-readme-streak-stats-drab-six.vercel.app",
     full_name: "github/github-readme-streak-stats",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "gitActions",
@@ -70,6 +88,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/gitActions",
     homepage: "",
     full_name: "github/gitActions",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "github-stats",
@@ -77,6 +97,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/github-stats",
     homepage: "https://shamilkotta-github-stats.vercel.app",
     full_name: "github/github-stats",
+    isLive: true,
+    isDraft: false,
   },
   {
     name: "React_Webpack",
@@ -84,6 +106,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/React_Webpack",
     homepage: "",
     full_name: "github/React_Webpack",
+    isLive: false,
+    isDraft: true,
   },
   {
     name: "simple-rsc",
@@ -92,6 +116,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/simple-rsc",
     homepage: "https://www.youtube.com/watch?v=Fctw7WjmxpU",
     full_name: "github/simple-rsc",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "awesome-github-profiles",
@@ -100,6 +126,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/awesome-github-profiles",
     homepage: "https://eddiehubcommunity.github.io/awesome-github-profiles/",
     full_name: "github/awesome-github-profiles",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "wemakedevs",
@@ -107,6 +135,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/wemakedevs",
     homepage: "https://wemakedevs.org",
     full_name: "github/wemakedevs",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "UpBit_FrontEnd",
@@ -115,6 +145,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/UpBit_FrontEnd",
     homepage: "",
     full_name: "github/UpBit_FrontEnd",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "UpBit_BackEnd",
@@ -123,6 +155,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/UpBit_BackEnd",
     homepage: "",
     full_name: "github/UpBit_BackEnd",
+    isLive: false,
+    isDraft: false,
   },
   {
     name: "edWorld",
@@ -131,6 +165,8 @@ export const repos = [
     repo: "https://github.com/shamilkotta/edWorld",
     homepage: "https://edworld.onrender.com",
     full_name: "github/edWorld",
+    isLive: true,
+    isDraft: false,
   },
   {
     name: "express-sample-2",
@@ -138,5 +174,7 @@ export const repos = [
     repo: "https://github.com/shamilkotta/express-sample-2",
     homepage: null,
     full_name: "github/express-sample-2",
+    isLive: false,
+    isDraft: false,
   },
 ];

@@ -215,6 +215,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const repoCard = document.createElement("div");
     repoCard.classList.add("repo-card");
 
+    const titleContainer = document.createElement("div");
+    titleContainer.classList.add("repo-title-container");
+
     const titleLink = document.createElement("a");
     // Link to homepage if available, otherwise to repo URL
     titleLink.href =
@@ -224,6 +227,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = document.createElement("h2");
     title.textContent = repo.name;
     titleLink.appendChild(title);
+    titleContainer.appendChild(titleLink);
+
+    // Create chips container
+    const chipsContainer = document.createElement("div");
+    chipsContainer.classList.add("repo-chips");
+
+    // Create Live chip if isLive is true
+    if (repo.isLive && repo.homepage && repo.homepage.trim() !== "") {
+      const liveChip = document.createElement("a");
+      liveChip.href = repo.homepage;
+      liveChip.target = "_blank";
+      liveChip.classList.add("repo-chip", "repo-chip-live");
+      liveChip.textContent = "Live";
+      chipsContainer.appendChild(liveChip);
+    }
+
+    // Create Draft chip if isDraft is true
+    if (repo.isDraft) {
+      const draftChip = document.createElement("a");
+      draftChip.href = repo.repo;
+      draftChip.target = "_blank";
+      draftChip.classList.add("repo-chip", "repo-chip-draft");
+      draftChip.textContent = "Draft";
+      chipsContainer.appendChild(draftChip);
+    }
+
+    titleContainer.appendChild(chipsContainer);
 
     const repoUrl = document.createElement("p");
     repoUrl.classList.add("repo-url");
@@ -236,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const description = document.createElement("p");
     description.textContent = repo.description || "No description available.";
 
-    repoCard.appendChild(titleLink);
+    repoCard.appendChild(titleContainer);
     repoCard.appendChild(repoUrl);
     repoCard.appendChild(description);
 
