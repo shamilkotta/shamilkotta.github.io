@@ -24,7 +24,7 @@ export const repos = [
     homepage: "https://journeygrid.vercel.app",
     full_name: "github/journeygrid",
     isLive: true,
-    isDraft: true,
+    isDraft: false,
   },
   {
     name: "zshi",
@@ -33,7 +33,7 @@ export const repos = [
     homepage: "https://www.npmjs.com/package/zshi",
     full_name: "github/zshi",
     isLive: true,
-    isDraft: true,
+    isDraft: false,
   },
   {
     name: "rn-drag-resize",
@@ -43,7 +43,7 @@ export const repos = [
     homepage: "https://www.npmjs.com/package/@shamilkotta/rn-drag-resize",
     full_name: "github/rn-drag-resize",
     isLive: true,
-    isDraft: true,
+    isDraft: false,
   },
   {
     name: "quick-switch",
@@ -52,7 +52,7 @@ export const repos = [
     homepage: null,
     full_name: "github/quick-switch",
     isLive: false,
-    isDraft: true,
+    isDraft: false,
   },
   {
     name: "clone-ai",
