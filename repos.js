@@ -34,7 +34,7 @@ export const repos = [
     homepage: "",
     full_name: "github/git-sync",
     isLive: true,
-    isDraft: true,
+    isDraft: false,
   },
   {
     name: "rlist",
