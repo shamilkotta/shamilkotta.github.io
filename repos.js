@@ -27,6 +27,16 @@ export const repos = [
     isDraft: true,
   },
   {
+    name: "git-sync",
+    description:
+      "Obsidian plugin for syncing the vault with git & github for both desktop and mobile",
+    repo: "https://github.com/shamilkotta/git-sync",
+    homepage: "",
+    full_name: "github/git-sync",
+    isLive: true,
+    isDraft: true,
+  },
+  {
     name: "rlist",
     description: "Your digital library, simplified",
     repo: "https://github.com/shamilkotta/rlist",
