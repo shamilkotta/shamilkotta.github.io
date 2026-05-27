@@ -49,7 +49,7 @@ export const repos = [
     name: "zshi",
     description: "A light intelligence in your zsh",
     repo: "https://github.com/shamilkotta/zshi",
-    homepage: "https://www.npmjs.com/package/zshi",
+    homepage: "https://npmx.dev/package/zshi",
     full_name: "github/zshi",
     isLive: true,
     isDraft: false,
@@ -59,7 +59,7 @@ export const repos = [
     description:
       "Draggable and Resizable component using React Native Reanimated",
     repo: "https://github.com/shamilkotta/rn-drag-resize",
-    homepage: "https://www.npmjs.com/package/@shamilkotta/rn-drag-resize",
+    homepage: "https://npmx.dev/package/@shamilkotta/rn-drag-resize",
     full_name: "github/rn-drag-resize",
     isLive: true,
     isDraft: false,
@@ -74,6 +74,16 @@ export const repos = [
     isDraft: false,
   },
   {
+    name: "ghcp",
+    description:
+      "Download a file or subdirectory from a private/public github link.",
+    repo: "https://github.com/shamilkotta/ghcp",
+    homepage: "https://npmx.dev/package/@shamilkotta/ghcp",
+    full_name: "github/ghcp",
+    isLive: true,
+    isDraft: false,
+  },
+  {
     name: "journeygrid",
     description: "Journal your journey",
     repo: "https://github.com/shamilkotta/journeygrid",
@@ -82,15 +92,15 @@ export const repos = [
     isLive: true,
     isDraft: false,
   },
-  {
-    name: "clone-ai",
-    description: "A minimal ai chat app to talk with multiple models",
-    repo: "https://github.com/shamilkotta/clone-ai",
-    homepage: "https://a-clone-ai.vercel.app/",
-    full_name: "github/clone-ai",
-    isLive: true,
-    isDraft: true,
-  },
+  // {
+  //   name: "clone-ai",
+  //   description: "A minimal ai chat app to talk with multiple models",
+  //   repo: "https://github.com/shamilkotta/clone-ai",
+  //   homepage: "https://a-clone-ai.vercel.app/",
+  //   full_name: "github/clone-ai",
+  //   isLive: true,
+  //   isDraft: true,
+  // },
   {
     name: "shamilkotta",
     description:
